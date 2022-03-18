@@ -1,3 +1,4 @@
+import { actions } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react";
 import React from "react";
 import Ex01_PropsComponent from "../03_input/Ex01_PropsComponent";
@@ -37,5 +38,6 @@ storiesOf("03_Input", module) //Story Book에 추가.
     />
   ))
   .addWithJSX("Ex09_Input_Addon_Actions", () => (
-    <Ex09_Input onChange={action("Event onChange")} />
+    <Ex09_Input onChange={actions("Event onChange")} />
   ));
+
